@@ -42,7 +42,7 @@ void stat(const double A[],int N, double B[6]){
         geo *= A[i];
     }
     B[1] = sqrt(sum_2/N);
-    B[2] = pow(geo,(1.0/6.0));
+    B[2] = pow(geo,(1.0/double(N)));
     B[3] = N/sum_3;
     B[4] = max;
     B[5] = min;
